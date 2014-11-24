@@ -1,49 +1,33 @@
-fuel/app/logs/*/*/*
-fuel/app/cache/*/*
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# temp files from editors
+*~
+*.bak
 .DS_Store
-.AppleDouble
-.LSOverride
+.buildpath
+.project
+.settings
+*.tmproj
+build
+.idea
+nbproject/
 
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Windows
-# =========================
-
-# Windows image file caches
+# hidden files created by Windows
 Thumbs.db
-ehthumbs.db
+desktop.ini
 
-# Folder config file
-Desktop.ini
+# the composer package lock file and install directory
+/composer.lock
+/fuel/vendor
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# any of the fuel packages installed by default
+/docs/
+/fuel/core/
+/fuel/packages/auth/
+/fuel/packages/email/
+/fuel/packages/oil/
+/fuel/packages/orm/
+/fuel/packages/parser/
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# dynamically generated files
+/fuel/app/logs/*/*/*
+/fuel/app/cache/*/*
+/fuel/app/config/crypt.php
